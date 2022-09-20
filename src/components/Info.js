@@ -39,8 +39,6 @@ const UserInfo = () => {
     },
   ];
 
-  console.log(public_repos);
-
   return (
     <section className="section">
       <Wrapper className="section-center">
