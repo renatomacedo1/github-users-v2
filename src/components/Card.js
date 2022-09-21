@@ -33,9 +33,15 @@ const Card = () => {
         <p>
           <MdLocationOn></MdLocationOn> {location || "earth"}
         </p>
-        <a href={`https://${blog}`}>
-          <MdLink></MdLink> {blog || "no data"}
-        </a>
+        {blog ? (
+          <a href={`https://${blog}`}>
+            <MdLink></MdLink> {blog}
+          </a>
+        ) : (
+          <p>
+            <MdLink></MdLink> no data
+          </p>
+        )}
       </div>
     </Wrapper>
   );
